@@ -1,0 +1,11 @@
+stdout.txt
+build.txt
+
+*.sublime-workspace
+*.exe
+
+tcc/
+
+roms/
+bios.bin
+oboy.o
