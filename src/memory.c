@@ -6,8 +6,6 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-CPU *hackCpu = NULL;
-
 extern byte gpuPalette;
 byte *ROM, BIOS[0x100], WRAM[0x3E00], VRAM[0x2000], CRAM[0x2000], ZRAM[0x80], IO[0x80];
 byte INT_ENABLE;
@@ -44,8 +42,6 @@ struct CounterControl {
 };
 
 void memoryStep(long cycles, struct CPU *cpu) {
-	hackCpu = cpu;
-
 	memClock += cycles;
 	counterClock += cycles;
 	dividerClock += cycles;
@@ -139,10 +135,6 @@ void writeByte(word address, byte b) {
 				INT_ENABLE = b; //< Interrupt enable flag
 			}
 			break;
-	}
-
-	if (hackCpu) {
-//		printf("[%04x] (%04x) = %02x\n", hackCpu->PC, address, b);
 	}
 }
 
