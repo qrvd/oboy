@@ -32,6 +32,16 @@ Working on:
 * User interface
 * The rest of the CPU instructions
 
+### Thanks to...
+
+* @Immendes for the JSON file [listing all GameBoy instructions](https://github.com/lmmendes/game-boy-opcodes) along with their
+individual timings and sizes. That saved me a lot of time.
+* The developer of Realboy for [the overview](https://realboyemulator.wordpress.com/2013/01/01/the-nintendo-game-boy-1/) on the Gameboy BIOS
+* PASTRAISER for their [handy table on GameBoy instructions](http://www.pastraiser.com/cpu/gameboy/gameboy_opcodes.html)
+* Monegenel's [memory map](http://gameboy.mongenel.com/dmg/asmmemmap.html)
+* Marc Rawer for hosting the [GameBoy CPU manual](http://marc.rawer.de/Gameboy/Docs/GBCPUman.pdf)
+* bircd.org for the [additional GameBoy documentation](http://bgb.bircd.org/pandocs.htm)
+
 ### Licensing
 
 See `LICENSE` and `docs/`. In addition, `tcc` is distributed under LGPL.
